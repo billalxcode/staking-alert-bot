@@ -4,8 +4,9 @@ services:
   redis:
     container_name: telegram-redis
     image: 'redis:alpine'
+    command: --port 7379
     ports:
-      - 7379:6379
+      - 7379:7379
     extra_hosts:
       - "host.docker.internal:host-gateway"
   app:
