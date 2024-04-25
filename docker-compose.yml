@@ -5,7 +5,7 @@ services:
     container_name: telegram-redis
     image: 'redis:alpine'
     ports:
-      - 6379:6379
+      - 7379:6379
     extra_hosts:
       - "host.docker.internal:host-gateway"
   app:
@@ -17,7 +17,7 @@ services:
   worker:
     container_name: telegram-worker
     image: staking-alert
-    command: rq worker -u redis://redis:6379/0
+    command: rq worker -u redis://redis:7379/0
     extra_hosts:
       - "host.docker.internal:host-gateway"
     depends_on:

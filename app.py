@@ -14,7 +14,8 @@ console = Console()
 
 console.log("Connecting to Redis")
 redis_connection = Redis(
-    host="host.docker.internal"
+    host="host.docker.internal",
+    port=7379
 )
 console.log("Create new redis queue")
 queue_connection = Queue(connection=redis_connection)
