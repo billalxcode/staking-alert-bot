@@ -21,7 +21,7 @@ queue_connection = Queue(connection=redis_connection)
 
 console.log("Reading staking artifacts")
 contract_abi = []
-contract_address = "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512"
+contract_address = "0x7A310858310Ddd047A43f686Bc794f90a3537d5B"
 with open("artifacts/staking.json") as File:
     artifact = json.loads(File.read())
     contract_abi = artifact['abi']
