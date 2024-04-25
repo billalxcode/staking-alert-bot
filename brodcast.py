@@ -6,7 +6,7 @@ from datetime import timedelta
 from coinmarketcapapi import CoinMarketCapAPI
 
 group_id = -1002099408316
-group_id = -4112324237
+# group_id = -4112324237
 cmc = CoinMarketCapAPI(api_key="165526c2-ae2f-4e24-8fb4-1cfa4390ef58")
 bot = Bot("7134780818:AAEu_iDWNB4c5uPPrKk0nCenz4aD2QU3qwQ")
 animation = os.path.join(
