@@ -18,8 +18,8 @@ animation = os.path.join(
 async def startDepositBroadcast(stakeAmount: str, duration: timedelta, apy: str, totalStaked: str, tx: str):
     print ("Staring broadcast")
     
-    stakeAmountConverted = from_wei(stakeAmount, 'ether')
-    totalStakedConverted = from_wei(totalStaked, 'ether')
+    stakeAmountConverted = from_wei(stakeAmount, 'gwei')
+    totalStakedConverted = from_wei(totalStaked, 'gwei')
 
     stakePriceResponse            = cmc.tools_priceconversion(symbol="PIA", amount=stakeAmountConverted)
     totalStakedPriceResponse      = cmc.tools_priceconversion(symbol="PIA", amount=totalStakedConverted)
@@ -65,8 +65,8 @@ NEW $PIA STAKE!
 async def startWithdrawBroadcast(amountWithdrawn: str, duration: timedelta, apy: str, totalStaked: str, tx: str):
     print ("Staring broadcast")
     
-    amountWithdrawnConverted = from_wei(amountWithdrawn, 'ether')
-    totalStakedConverted = from_wei(totalStaked, 'ether')
+    amountWithdrawnConverted = from_wei(amountWithdrawn, 'gwei')
+    totalStakedConverted = from_wei(totalStaked, 'gwei')
 
     keyboard = [
         [
@@ -100,8 +100,8 @@ NEW $PIA WITHDRAWAL!
 async def startEmergencyWithdrawBroadcast(amountWithdrawn: str, duration: timedelta, apy: str, totalStaked: str, tx: str):
     print ("Staring broadcast")
     
-    amountWithdrawnConverted = from_wei(amountWithdrawn, 'ether')
-    totalStakedConverted = from_wei(totalStaked, 'ether')
+    amountWithdrawnConverted = from_wei(amountWithdrawn, 'gwei')
+    totalStakedConverted = from_wei(totalStaked, 'gwei')
 
     keyboard = [
         [
