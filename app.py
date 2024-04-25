@@ -28,7 +28,7 @@ with open("artifacts/staking.json") as File:
 
 console.log("Connection to rpc provider")
 provider = Web3(
-    HTTPProvider("http://host.docker.internal:8545")
+    HTTPProvider("https://mainnet.infura.io/v3/c47fcf77394e40e78eac21970ed5feeb")
 )
 
 console.log("Connection to smart contract")
