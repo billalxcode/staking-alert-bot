@@ -37,7 +37,7 @@ async def startDepositBroadcast(stakeAmount: str, duration: timedelta, apy: str,
             InlineKeyboardButton("STAKE $PIA HERE", 'https://stake.olympiaai.io')
         ],
         [
-            InlineKeyboardButton('TX HHASH', f"https://etherscan.io/tx/{tx}")
+            InlineKeyboardButton('TX HASH', f"https://etherscan.io/tx/{tx}")
         ]
     ]
     markup = InlineKeyboardMarkup(keyboard)
@@ -73,7 +73,7 @@ async def startWithdrawBroadcast(amountWithdrawn: str, duration: timedelta, apy:
             InlineKeyboardButton("STAKE $PIA HERE", 'https://stake.olympiaai.io')
         ],
         [
-            InlineKeyboardButton('TX HHASH', "https://google.com")
+            InlineKeyboardButton('TX HASH', "https://google.com")
         ]
     ]
     markup = InlineKeyboardMarkup(keyboard)
@@ -108,7 +108,7 @@ async def startEmergencyWithdrawBroadcast(amountWithdrawn: str, duration: timede
             InlineKeyboardButton("STAKE $PIA HERE", 'https://stake.olympiaai.io')
         ],
         [
-            InlineKeyboardButton('TX HHASH', "https://google.com")
+            InlineKeyboardButton('TX HASH', "https://google.com")
         ]
     ]
     markup = InlineKeyboardMarkup(keyboard)
